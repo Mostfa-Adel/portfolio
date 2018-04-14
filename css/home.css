@@ -1,0 +1,153 @@
+body {
+    margin: 0 20px;
+}
+
+h1,
+h2,
+p {
+    color: #2d3c49;
+}
+
+h2 {
+    margin: 5px;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration-line: none;
+    color: #02b3e4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    border-bottom: 3px #7d97ad solid;
+    padding: 10px 0 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    max-height: 80px;
+}
+
+.name {
+    text-transform: uppercase;
+}
+
+.name h1 {
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.name p {
+    margin: 4px 0 3px;
+    text-align: center;
+}
+
+#main-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-body {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.project p,
+.project h2 {
+    text-align: center;
+}
+
+#featured-title {
+    margin: 10px 0 20px;
+    text-align: left;
+}
+
+@media screen and (min-width:400px) {
+    header {
+        flex-flow: row;
+    }
+    .name {
+        width: 60%;
+        margin: 0;
+    }
+    .logo {
+        width: 40%;
+        justify-content: flex-start;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .logo img {
+        max-height: 100px;
+        max-width: 100px;
+    }
+    .name h1 {
+        margin-top: 29px;
+        text-align: right;
+    }
+    .name p {
+        text-align: right;
+    }
+    #featured-title {
+        margin: 15px 0 15px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    body {
+        margin: 0 50px;
+    }
+    .project {
+        margin: 0 3px;
+        width: 48.9%;
+    }
+    .name {
+        margin-top: 25px;
+    }
+    .logo img {
+        max-height: 120px;
+        max-width: 120px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    body {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .project {
+        margin: 0 5px;
+        width: 32%;
+    }
+}
